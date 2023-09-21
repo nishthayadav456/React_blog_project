@@ -331,7 +331,7 @@ margin-top: 25px;
     width: 592px;
     position: absolute;
     left: -146px;
-    top: 50px;
+    top: -17px;
 }
 .second{
     border-radius: 20px;
@@ -339,7 +339,7 @@ margin-top: 25px;
     position: absolute;
     right: -299px;
     width: 592px;
-    top: 506px;
+    top: 437px;
    
     
 }
@@ -349,7 +349,7 @@ margin-top: 25px;
     width: 592px;
     position: absolute;
     right: -298px;
-    top: 906px;
+    top: 830px;
 }
 
 .hr-under{
@@ -361,12 +361,12 @@ margin-top: 25px;
     width: 69%;
 }
 .lateststories{
+    font-size: 30px;
     margin-left: 97px;
-    text-align: left;
     position: absolute;
-    top: 1415px;
-    font-size: 25px;
-    width: 51%;
+    text-align: left;
+    top: 1581px;
+    width: 61%;
 }
 .homelatest{
     display: flex;
@@ -421,7 +421,7 @@ margin-top: 25px;
    
 }
 .Right{
-width:700px;
+
 position: relative;
 margin-top: 30px;
 margin-left: -125px;
