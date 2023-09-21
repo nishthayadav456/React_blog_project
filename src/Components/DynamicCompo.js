@@ -23,7 +23,7 @@ function DynamicCompo(){
                 <div className="container1" key={index}>
                <div id="heading">{item.heading}</div>
                 <div className="like-icons">
-                <img   src="https://www.freeiconspng.com/thumbs/like-icon-png/black-like-icon-png-13.png" alt="Not found"  style={{width:"30px", height:"30px"}} /> 
+                <img  src="https://www.freeiconspng.com/thumbs/like-icon-png/black-like-icon-png-13.png" alt="Not found"  style={{width:"30px", height:"30px"}} /> 
                  Like </div>
                 <div  className="share-icons">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV6F73IVEoRP9k2YgunZ64wyoueHakwAWDj1O9QZc&s" alt="Not found" style={{width:"30px", height:"25px"}}/> 

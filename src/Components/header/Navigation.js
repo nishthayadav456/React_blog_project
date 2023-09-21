@@ -8,10 +8,10 @@ function Navigation() {
     const handleClick=()=>{
         setIsClick(!isClick);
         if(!isClick) {
-          setClassName('openHamburger') //==>x
-           setNavClassName('openNav')  //vertically nav bar
-        }else{//click =true display none
-          setClassName('closeHamburger')//close
+          setClassName('openHamburger') 
+           setNavClassName('openNav')  
+        }else{
+          setClassName('closeHamburger')
           setNavClassName('nav')//display none
         }
     }
@@ -24,11 +24,11 @@ function Navigation() {
  </div>
  <div className={navClassName}>
     <NavLink  onClick={handleClick} to='/' >Home</NavLink>
-    <NavLink  onClick={handleClick} to='/Bollywood' style={({ isActive }) => ({  color: isActive ? 'grey' : 'black' })} >Bollywood</NavLink>
-    <NavLink  onClick={handleClick} to='/Hollywood' style={({ isActive }) => ({  color: isActive ? 'grey' : 'black' })} >Hollywood</NavLink>
-    <NavLink  onClick={handleClick} to='/Technology'style={({ isActive }) => ({  color: isActive ? 'grey' : 'black' })} >Technology</NavLink>
-    <NavLink  onClick={handleClick} to='/Fitness'   style={({ isActive }) => ({  color: isActive ? 'grey' : 'black' })} >Fitness</NavLink>
-    <NavLink  onClick={handleClick} to='/Food'      style={({ isActive }) => ({  color: isActive ? 'grey' : 'black' })} >Food</NavLink>
+    <NavLink  onClick={handleClick} to='/Bollywood' style={({ isActive }) => ({ color: isActive ? 'grey' : 'black' })} >Bollywood</NavLink>
+    <NavLink  onClick={handleClick} to='/Hollywood' style={({ isActive }) => ({ color: isActive ? 'grey' : 'black' })} >Hollywood</NavLink>
+    <NavLink  onClick={handleClick} to='/Technology'style={({ isActive }) => ({ color: isActive ? 'grey' : 'black' })} >Technology</NavLink>
+    <NavLink  onClick={handleClick} to='/Fitness'   style={({ isActive }) => ({ color: isActive ? 'grey' : 'black' })} >Fitness</NavLink>
+    <NavLink  onClick={handleClick} to='/Food'      style={({ isActive }) => ({ color: isActive ? 'grey' : 'black' })} >Food</NavLink>
   </div>
  </>
   )
