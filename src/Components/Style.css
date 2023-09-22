@@ -8,13 +8,18 @@
    height: 500px;
     margin-left: 165px;
    position: relative;
-   
+  
 }
 .first{
     border-radius: 20px;
     height: 400px;
   
     width: 750px
+}
+.Second-image{
+    display: flex;
+    flex-wrap: wrap;
+   
 }
 .second{
     border-radius: 20px;
@@ -361,12 +366,12 @@ margin-top: 25px;
     width: 69%;
 }
 .lateststories{
-    font-size: 30px;
+    font-size: 33px;
     margin-left: 97px;
     position: absolute;
     text-align: left;
-    top: 1581px;
-    width: 61%;
+    top: 1391px;
+    width: 67%;
 }
 .homelatest{
     display: flex;
