@@ -10,17 +10,17 @@ const Footer = () => {
 
       <div className="SecCon">
       
-      <div className="middleContainer">
+      {/* <div className="middleContainer"> */}
         <div className="middleSubCon">
           <div className="FDescription">
-            An All in one blog, bringing you the best of entertainment, knowledge
-            and inspiration.
+           <p> An All in one blog, bringing you the best of entertainment, knowledge</p>
+           <p> and inspiration.</p>
           </div>
           <div className="Copywrite">
             <span>©</span>2023.The Siren. All Rights reserved
           </div>
         </div>
-      </div>
+      {/* </div> */}
       </div>
      
       <div className="contact">

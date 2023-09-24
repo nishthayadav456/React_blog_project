@@ -15,26 +15,31 @@ function DynamicCompo(){
     console.log(dRouteData)
     return(
         <>
-        <hr className="dynamichr"/>
-        <br/>
+        {/* <hr className="dynamichr"/>
+        <br/> */}
+
        <div className="parentContainer">
-       {datacontext.filter((item)=>item.id===parseInt(id)).map((item,index)=>{
-            return(
-                <div className="container1" key={index}>
-               <div id="heading">{item.heading}</div>
-                <div className="like-icons">
+       <div className="like-icons">
                 <img  src="https://www.freeiconspng.com/thumbs/like-icon-png/black-like-icon-png-13.png" alt="Not found"  style={{width:"30px", height:"30px"}} /> 
                  Like </div>
                 <div  className="share-icons">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV6F73IVEoRP9k2YgunZ64wyoueHakwAWDj1O9QZc&s" alt="Not found" style={{width:"30px", height:"25px"}}/> 
                  Share</div>
+       {datacontext.filter((item)=>item.id===parseInt(id)).map((item,index)=>{
+            return(
+              
+                <div className="container1" key={index}>
+               <div id="heading">{item.heading}</div>
+               
                  
              
                <div className="middlepart">
                <span className="middle-icon">
+                <div className="datecon">
                <img src="https://png.pngtree.com/png-clipart/20200225/original/pngtree-business-office-girl-avatar-icon-vector-download-png-image_5257568.jpg"alt="Not found" style={{width:"80px", height:"80px" ,borderRadius:"50%"}}/>
-               <p className="name">Nishtha Yadav</p> 
-               <p className="date">20 sept 2023</p>
+               <p className="name">Nishtha Yadav <span style={{opacity:0.5}}>20 sept 2023</span></p> 
+               </div>
+               {/* <p className="date">20 sept 2023</p> */}
                
                <span className="icons">
                <img src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-best-facebook-logo-icons-gif-transparent-png-images-9.png"  alt="Not found" style={{width:"25px", height:"25px"}}/>
@@ -49,25 +54,27 @@ function DynamicCompo(){
                <div className="content">{item.Description.slice(0,2000)}...</div> <br/><hr className="lower-hr"/>
                <span className="middle-icon1">
                <img src="https://png.pngtree.com/png-clipart/20200225/original/pngtree-business-office-girl-avatar-icon-vector-download-png-image_5257568.jpg"alt="Not found" style={{width:"80px", height:"80px" ,borderRadius:"50%"}}/>
-               <p className="name">Nishtha Yadav</p> 
-               <p className="date">20 sept 2023</p></span><br/>
+               <p className="name">Nishtha Yadav <span style={{opacity:0.5}}>20 sep 2023</span></p> 
+              
+               </span><br/>
                <hr  className="lower-hr"/>
                <button  className="btn"onClick={()=>nav(-1)}>Back</button>
               </div>
              
            )
          })}
+         </div>
            <div className="Lower-heading"> More from the Shiren <hr className="Shiren-hr"/> </div>
             <div className="Lower-Item">
                 {datacontext.filter((item)=>(item.Category===dRouteData) && (item.id%15 ===1 || item.id%16===2 || item.id%17===3)).map((item,index)=>{
                       return(
-                      <div key={index}>
+                      <div  className="Limage"key={index}>
                     <NavLink to={`/DynamicCompo/${item.id}`}>
                      <div >
                      <img  className="threeimage"src ={item.image} alt="not found"/>
                      </div>
                     <div className="title" >
-                      {item.heading.slice(0,40) }
+                      {item.heading.slice(0,30) }
                       </div>
                     </NavLink>
                    
@@ -75,7 +82,7 @@ function DynamicCompo(){
            )
        })}
        </div>
-       </div>
+       
      </>
     )
 }

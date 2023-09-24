@@ -1,12 +1,12 @@
 
-.MainFooter {
+/* .MainFooter {
     display: flex;
   background-color: darkslategrey;
     color: #ffffff;
-    justify-content: center;
-  
+    justify-content: space-between;
+  border:4px solid red
    
-}
+} */
 
 .Refernce {
     display: flex;
@@ -15,25 +15,33 @@
     gap: 4px;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    border:2px solid orange
 }
 
-.FooterWidth {
+/* .FooterWidth {
     width: 90%;
-}
+} */
 
 .GridCont{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    /* justify-content: space-between; */
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
     height: 100%;
+    border:3px solid blue;
+    background-color: darkslategray;
+    
+   
 }
 
-.SecCon {
+/* .SecCon {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border:1px solid green;
+} */
+.FDescription{
+    border:2px solid black;
 }
-
 
 .center{
     padding-top: 1rem;
@@ -45,27 +53,13 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     padding-top: 2rem;
+
 }
-
-
-
-
 .middleContainer {
-    /* height: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
     display: flex;
     flex-direction: column;
 }
-
-
-
 .middleSubCon {
-    /* height: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
     height: 4rem;
     display: flex;
     flex-direction: column;
@@ -86,89 +80,67 @@ pre{
     color: #ffffff;
 }
 
-@media screen  and (min-width:370px)and (max-width:500px){
-   
-.MainFooter {
-    display: flex;
-    background-color: darkslategrey;
-    color: #ffffff;
-    justify-content: center;
-    margin-top: 1817px;
-    width: 195%;
-   
-}
+@media screen  and (min-width:370px)and (max-width:580px){
+    .Refernce {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+       
+        border:2px solid orange
+        
+    }
+    .GridCont{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        border:3px solid blue;
+        background-color: darkslategray;
+     }
+     .FDescription{
+        border:2px solid black;
+        }
+     .center{
+        padding-top: 1rem;
+    }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        width:400px
+    
+    }
+     .middleContainer {
+        display: flex;
+        flex-direction: column;
+    }
+        .middleSubCon {
+        height: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .lastFText {
+        font-size: 15px;
+        font-style: normal;
+    }
+    
+    pre{
+        font-family: inherit;
+    }
+    
+    .Flinks{
+        text-decoration: none;
+        color: #ffffff;
+    }
 
-.Refernce {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.FooterWidth {
-    width: 90%;
-}
-
-.GridCont{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    /* justify-content: space-between; */
-    height: 100%;
-}
-
-.SecCon {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-
-.center{
-    padding-top: 1rem;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding-top: 2rem;
-}
-
-
-
-
-.middleContainer {
-   
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-.middleSubCon {
-   
-    height: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.lastFText {
-    font-size: 15px;
-    font-style: normal;
-}
-
-pre{
-    font-family: inherit;
-}
-
-.Flinks{
-    text-decoration: none;
-    color: #ffffff;
-} 
 }
 
     

@@ -78,7 +78,7 @@
     /* right: -358px; */
     text-decoration: none;
     top: -31px;
-    width: 195%;
+    /* width: 21em; */
     z-index: 2;
   
     }
@@ -92,15 +92,15 @@
     }
   
     .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 44px;
-        height: 34px;
-        background: rgb(222, 204, 213);
-        position: absolute;
-        right: -316px;
-        top: 23px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 44px;
+      height: 34px;
+      background: rgb(222, 204, 213);
+      position: absolute;
+      right: 1em;
+      top: 23px;
     }
   .hamburger:hover{
     cursor: pointer;

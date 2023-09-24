@@ -26,12 +26,8 @@ function Latest(){
     console.log(ContextData)
     return(
         <>
-        <div className='lateststories'>
-        <h2>The Latest
-        <hr className='hr-under'/>
-        </h2>
-        </div>
-        <br/>
+       
+        
         <div className='homelatest'>
         {ContextData.filter((item)=>item.id%20===0 ).map((item,index)=>{
             console.log(item)
@@ -41,9 +37,9 @@ function Latest(){
                  <NavLink to={`/DynamicCompo/${item.id}`}>
                    
                  <img id="Latestimage" src ={item.image} alt="not found" />
-                 <h3 className='heading' >{item.heading } </h3>
+                 <h3 className='heading' >{item.heading.slice(0,30)} </h3>
                      <div className='para1'>
-                    <p> {item.Description }</p>
+                    <p> {item.Description.slice(0,200) }</p>
                  </div>
                  </NavLink>
                    </div>
@@ -59,11 +55,6 @@ function TopStories(){
     console.log(ContextData)
     return(
         <>
-        <div class="Top-post">
-        <h2>Top Stories
-        <hr className='hr-under2'/>
-        </h2>
-        </div>
        <div className='thirdbox'>
        <br/>
         <div className='Right'>
@@ -76,8 +67,8 @@ function TopStories(){
                  <img id="topstoryimage"src ={item.image} alt="not found" />
                  </div>
                   <div className='heading2'>{item.heading.slice(0,45)} </div>
-                   <p className='para2'> {item.Description.slice(0,150)}...</p>
-                     <hr className="line"/>
+                   <p className='para2'> {item.Description.slice(0,100)}...</p>
+                     {/* <hr className="line"/> */}
                      </NavLink>
                     </div>
                     
@@ -87,18 +78,17 @@ function TopStories(){
 
       
          <div className="Left">
-         <h2 id="First-post">Top Posts</h2> 
-         <hr className="hr-line" />
+         
            {ContextData.filter((item)=>item.id%12===0).map((item,index)=>{
             return(
-                <div  className="mid"key={index}>
+                <div className="mid"key={index}>
                    <NavLink to={`/DynamicCompo/${item.id}`}>
                 <div className="head4">{item.heading.slice(0,40)} <h1 className="counter">{index+1}</h1></div>
                 <div>
                <img id="topostimage"src ={item.image} alt="not found"  />
                </div>
                </NavLink>
-               <hr className="linegrey"/>
+               {/* <hr className="linegrey"/> */}
                </div>
            )
        })}
