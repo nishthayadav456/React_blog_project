@@ -16,6 +16,7 @@ console.log(ContextData)
         
         <div className="Mainparent">
         <div className="right">
+        <h1 className="bolyhead">Food <hr className="underhr"/></h1>
         {ContextData.filter((item)=>item.id>=30 && item.id<36).map((item,index)=>{
            return(
              <div className="middle"key={index}>
@@ -34,11 +35,12 @@ console.log(ContextData)
         </div>
        
         <div className="left">
+        <h1 className="bolyhead2">Top Post <hr className="underhr"/></h1>
            {ContextData.filter((item)=>item.id>=36 && item.id<=40).map((item,index)=>{
            return(
                <div  className="middle1"key={index}>
                <NavLink to={`/DynamicCompo/${item.id}`}>
-                <div className="head1">{item.heading.slice(0,15)} <h1 className="counter">{index+1}</h1></div>
+                <div className="head1">{item.heading.slice(0,20)} <h1 className="counter">{index+1}</h1></div>
                 <div>
                <img  id="bimage1" src ={item.image} alt="not found" />
                </div>

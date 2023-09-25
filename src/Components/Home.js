@@ -12,7 +12,7 @@ function Home(){
         <>
       <Navigation/>
        
-        <br/>
+       
         <MainPage/>
         <Latest/>
         <TopStories/>
@@ -27,8 +27,9 @@ function Latest(){
     return(
         <>
        
-        
+       <h1 className='thelatest'>The Latest <hr className='underhr'/></h1>
         <div className='homelatest'>
+           
         {ContextData.filter((item)=>item.id%20===0 ).map((item,index)=>{
             console.log(item)
             return(
@@ -39,7 +40,7 @@ function Latest(){
                  <img id="Latestimage" src ={item.image} alt="not found" />
                  <h3 className='heading' >{item.heading.slice(0,30)} </h3>
                      <div className='para1'>
-                    <p> {item.Description.slice(0,200) }</p>
+                    <p> {item.Description.slice(0,200) }...</p>
                  </div>
                  </NavLink>
                    </div>
@@ -58,6 +59,7 @@ function TopStories(){
        <div className='thirdbox'>
        <br/>
         <div className='Right'>
+            <h1 className='topstory'>Top Stories<hr className='underhr'/></h1>
         {ContextData.filter((item)=>item.id%11===0 ).map((item,index)=>{
             console.log(item)
             return(
@@ -78,7 +80,7 @@ function TopStories(){
 
       
          <div className="Left">
-         
+         <h1 className='toppost'>Top Post<hr className='underhr'/></h1>
            {ContextData.filter((item)=>item.id%12===0).map((item,index)=>{
             return(
                 <div className="mid"key={index}>

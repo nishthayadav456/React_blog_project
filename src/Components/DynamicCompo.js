@@ -51,14 +51,16 @@ function DynamicCompo(){
                <div >
                <img className="imagecenter" src={item.image} alt="not found"/>
                </div>
-               <div className="content">{item.Description.slice(0,2000)}...</div> <br/><hr className="lower-hr"/>
+               <div className="content">{item.Description}</div>
                <span className="middle-icon1">
                <img src="https://png.pngtree.com/png-clipart/20200225/original/pngtree-business-office-girl-avatar-icon-vector-download-png-image_5257568.jpg"alt="Not found" style={{width:"80px", height:"80px" ,borderRadius:"50%"}}/>
                <p className="name">Nishtha Yadav <span style={{opacity:0.5}}>20 sep 2023</span></p> 
               
-               </span><br/>
-               <hr  className="lower-hr"/>
+               </span>
+             
+               <div className="btn3"> 
                <button  className="btn"onClick={()=>nav(-1)}>Back</button>
+               </div>
               </div>
              
            )
@@ -76,8 +78,13 @@ function DynamicCompo(){
                     <div className="title" >
                       {item.heading.slice(0,30) }
                       </div>
-                    </NavLink>
-                   
+                    
+                    <span className="middle-icon2">
+               <img src="https://png.pngtree.com/png-clipart/20200225/original/pngtree-business-office-girl-avatar-icon-vector-download-png-image_5257568.jpg"alt="Not found" style={{width:"80px", height:"80px" ,borderRadius:"50%"}}/>
+               <p className="name">Nishtha Yadav <span style={{opacity:0.5}}>20 sep 2023</span></p> 
+              
+               </span>
+               </NavLink>
                      </div>
            )
        })}

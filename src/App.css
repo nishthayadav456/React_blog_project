@@ -19,21 +19,7 @@ body{
     font-weight: bolder;
     
 }
-/* .compo{
-   
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    width: 70%;
-    font-size: 20px;
-} */
-/* a{
-    text-decoration: none;
-    color:black  
-}
-a:hover{
-    color: grey;
-} */
+
 .home{
     text-decoration: none;
     color:black   
@@ -87,14 +73,14 @@ a{
 .Mainparent{
     display: flex;
     justify-content: space-around;
-    border:5px solid black;
+   
    
 }
 .right{
 
 width:650px;
 position: relative;
-border:2px solid red;
+
 
 }
 
@@ -103,7 +89,7 @@ border:2px solid red;
     left: 314px;
     font-weight: bolder;
     width: 200px;
-border:2px solid purple
+
 
 
 }
@@ -113,33 +99,33 @@ border:2px solid purple
     top: 60px;
     width: 324px;
     height: 120px;
-    border: 2px solid green;
+   
    
 }
 .middle{
 height:220px;
 margin-bottom: 50px;
 position: relative;
-border:2px solid yellow
+border-bottom: 2px solid grey;
+
 }
 .middle1{
-    height:180px; 
-    border:2px solid blue
-}
-.linegrey{
+    height:155px; 
+    margin-bottom: 20px;
+    border-bottom: 2px solid grey;
    
-    height: 3px;
-    border: none;
-    background-color: #f0f0f0;
 }
-.line{
-    height: 3px;
-    border: none;
-    background-color: #f0f0f0; 
-}  
+
+.underhr{
+    width:80px;
+    background-color: rgb(213, 73, 73);
+    height:3px;
+    border:none;
+    margin-bottom:20px;
+} 
 .left{
     position: relative;
-    border: 2px solid green;
+   
     
    
 }
@@ -150,7 +136,7 @@ border:2px solid yellow
     font-weight: 600;
    left:220px;
     width: 100px;
-    border:2px solid rgb(174, 48, 179)
+   
 
    
 }
@@ -196,17 +182,18 @@ width:200px;
  height:150px  
 }
 /* phone view */
-@media screen and (min-width:375px) and (max-width:580px){
+@media screen and  (max-width:580px){
     .App{
         display: flex;
-        justify-content: center;
+      justify-content: flex-start;
+        
     }
     #The{
         font-size: 25px;
          transform: rotate(-90deg);
     }
     #siren{
-        font-size: 40px;
+        font-size: 34px;
         font-weight: bolder;
         
     }
@@ -265,7 +252,7 @@ width:200px;
     .Mainparent{
         display: flex;
         justify-content: space-around;
-        border:5px solid black;
+       
         flex-direction: column;
         align-items: center;
     }
@@ -273,7 +260,7 @@ width:200px;
     
         width: 350px;
         position: relative;
-        border: 2px solid red;
+      
    
     
     }
@@ -283,7 +270,7 @@ width:200px;
         left: 164px;
         font-weight: bolder;
         width: 174px;
-    border:2px solid purple
+ 
     
     
     }
@@ -293,36 +280,25 @@ width:200px;
         top: 60px;
         width: 176px;
         height: 120px;
-       border: 3px solid palevioletred;
+      
        
     }
     .middle{
-        height:250px;
-    margin-bottom: 50px;
+        height: 210px;
+        margin-bottom: 30px;
     position: relative;
-    border:2px solid yellow
+    
     }
     .middle1{
         height:180px; 
-        border:2px solid blue
+     
     }
-    .linegrey{
-       
-        height: 3px;
-        border: none;
-        background-color: #f0f0f0;
-    }
-    .line{
-        height: 3px;
-        border: none;
-        background-color: #f0f0f0; 
-    }  
+   
     .left{
         position: relative;
-        /* right:80px; */
-        border: 2px solid green;
+       
         width:351px;
-        
+      
        
     }
     
@@ -337,7 +313,7 @@ width:200px;
         font-weight: 600;
         left:220px;
          width: 100px;
-        border:2px solid rgb(174, 48, 179)
+        
      }
     
     
@@ -361,7 +337,7 @@ width:200px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 800px;
+        height: 700px;
         width: 350px;
         border: 1px solid black;
        
@@ -382,4 +358,169 @@ width:200px;
     }
 
 }
-
+@media screen and (min-width:581px) and (max-width:825px) {
+    .App{
+        display: flex;
+        justify-content: center;
+    }
+    #The{
+        font-size: 25px;
+         transform: rotate(-90deg);
+    }
+    #siren{
+        font-size: 40px;
+        font-weight: bolder;
+        
+    }
+    
+    .home{
+        text-decoration: none;
+        color:black   
+    }
+    .home:hover{
+        color: grey;
+    }
+    .tech{
+        text-decoration: none;
+        color:black   
+    }
+    .tech:hover{
+        color: grey;
+    }
+    .bollywood{
+        text-decoration: none;
+        color:black  
+    }
+    .bollywood:hover{
+        color: grey;
+    }
+    .hollywood{
+        text-decoration: none;
+        color:black   
+    }
+    
+    .hollywood:hover{
+        color: grey;
+    }
+    .fit{
+        text-decoration: none;
+        color:black     
+    }
+    .fit:hover{
+        color: grey;
+    }
+    .food{
+        text-decoration: none;
+        color:black     
+    }
+    .food:hover{
+        color: grey;
+    }
+    a{
+        text-decoration: none;
+        color:black     
+    }
+    
+    /* All component */
+    
+    .Mainparent{
+        display: flex;
+        justify-content: space-around;
+      
+       
+    }
+    .right{
+    
+        width: 361px;
+    position: relative;
+  
+    }
+    
+    .head{
+        position: absolute;
+        left: 190px;
+        font-weight: bolder;
+        width: 165px;
+   
+    
+    
+    }
+    .description{
+        position: absolute;
+        left: 194px;
+        top: 60px;
+        width: 158px;
+        height: 120px;
+        
+       
+    }
+    .middle{
+    height:220px;
+    margin-bottom: 50px;
+    position: relative;
+  
+    }
+    .middle1{
+        height:180px; 
+       
+    }
+   
+    .left{
+        position: relative;
+      
+        width: 311px;
+       
+    }
+    
+    
+    .head1{
+        position: absolute;
+        font-weight: 600;
+        left: 175px;
+        width: 119px;
+      
+    
+       
+    }
+    
+    .counter{
+        color: #c5c5c5;
+        font-size: 40px;
+        position: absolute;
+        right:10px;
+        top:40px;
+        display:inline-block;
+    }
+    .btn1{
+        height: 50px;
+        width: 7%;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-left: 180px;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+    .advertisement{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 568px;
+        width: 310px;
+        border: 1px solid black;
+       
+       
+        
+    }
+    #secondimage{
+        height: 700px;
+    width: 317px;
+    }
+    #bimage{
+        width: 174px;
+        height: 200px;
+    }
+    #bimage1{
+        width: 161px;
+        height: 150px;
+    } 
+}

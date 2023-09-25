@@ -15,7 +15,7 @@
     gap: 4px;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    border:2px solid orange
+  
 }
 
 /* .FooterWidth {
@@ -27,7 +27,7 @@
     flex-wrap: wrap;
    justify-content: space-around;
     height: 100%;
-    border:3px solid blue;
+ 
     background-color: darkslategray;
     
    
@@ -39,9 +39,9 @@
     justify-content: flex-start;
     border:1px solid green;
 } */
-.FDescription{
+/* .FDescription{
     border:2px solid black;
-}
+} */
 
 .center{
     padding-top: 1rem;
@@ -53,6 +53,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     padding-top: 2rem;
+  
 
 }
 .middleContainer {
@@ -84,12 +85,14 @@ pre{
     .Refernce {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         gap: 4px;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        /* align-items: center; */
        
-        border:2px solid orange
+        width: 289px;
+       
         
     }
     .GridCont{
@@ -98,12 +101,77 @@ pre{
         justify-content: center;
         height: 100%;
         align-items: center;
-        border:3px solid blue;
+       
         background-color: darkslategray;
      }
-     .FDescription{
+     /* .FDescription{
         border:2px solid black;
-        }
+       
+        } */
+     .center{
+        padding-top: 1rem;
+    }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        width: 293px;
+      
+    
+    }
+     .middleContainer {
+        display: flex;
+        flex-direction: column;
+    }
+        .middleSubCon {
+        height: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 300px;
+    }
+    
+    .lastFText {
+        font-size: 15px;
+        font-style: normal;
+    }
+    
+    pre{
+        font-family: inherit;
+    }
+    
+    .Flinks{
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+}
+@media screen and (min-width:520px) and (max-width:825px)  {
+    .Refernce {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+       
+       
+        
+    }
+    .GridCont{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+      
+        background-color: darkslategray;
+     }
+     /* .FDescription{
+        border:2px solid black;
+        } */
      .center{
         padding-top: 1rem;
     }
@@ -125,6 +193,7 @@ pre{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        width:200px;
     }
     
     .lastFText {
@@ -140,9 +209,7 @@ pre{
         text-decoration: none;
         color: #ffffff;
     }
-
 }
-
     
   
 
