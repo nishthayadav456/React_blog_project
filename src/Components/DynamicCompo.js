@@ -15,8 +15,7 @@ function DynamicCompo(){
     console.log(dRouteData)
     return(
         <>
-        {/* <hr className="dynamichr"/>
-        <br/> */}
+      
 
        <div className="parentContainer">
        <div className="like-icons">
